@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "Configuração Padrão Linux",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build",
+      "environment": {
+        "PKG_CONFIG_PATH": "/usr/lib/x86_64-linux-gnu/pkgconfig"
+      },
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/build/build/Release/generators/conan_toolchain.cmake",
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_PROJECT_INCLUDE": "${sourceDir}/cmake/run.cmake"
+      }
+    }
+  ]
+}

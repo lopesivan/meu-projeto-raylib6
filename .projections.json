@@ -1,0 +1,15 @@
+{
+    "*.cpp": {
+        "type": "cpp",
+        "start": "make configure",
+        "make": "make build",
+        "run": "lua vim.cmd.terminal('./build/app_example')",
+        "clean": "!rm -rf {project}/build"
+    },
+    "./.projections.json": {
+        "type": "dit"
+    },
+    "README.md": {
+        "type": "doc"
+    }
+}
